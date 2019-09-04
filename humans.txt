@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Paul Mederos — maker — @pvm
 
 # THANKS
 
-    <name>
+    @brim, @ptrksmth, @rasmorton
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Modernizr, Normalize.css
+    Git + GitHub Pages for hosting
