@@ -291,7 +291,7 @@ h2 { font-size: 2.1rem; }
 
 .Intro {
   padding-top: 8.8rem;
-  margin-bottom: 8.8rem;
+  margin-bottom: 4.2rem;
 }
 
   .Intro h1 {
@@ -317,6 +317,11 @@ h2 { font-size: 2.1rem; }
   background-size: 64px 64px;
   margin-left: 0;
   margin-bottom: 8.8rem;
+}
+
+.PastOrgs {
+  padding-top: 10rem;
+  overflow-x: scroll;
 }
 
 .Studies {
@@ -451,7 +456,7 @@ h2 { font-size: 2.1rem; }
     }
 
 .Contact {
-  padding: 20rem 0;
+  padding: 28rem 0;
 }
 
 .Contact__title {
