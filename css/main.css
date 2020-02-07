@@ -423,10 +423,10 @@ h2 { font-size: 2.1rem; }
   background-size: cover;
 }
 
-.BrandCard.ten  .BrandCard__image { background-image: url('../img/BrandCard-image-10to100.png'); }
-.BrandCard.weo  .BrandCard__image { background-image: url('../img/BrandCard-image-weo.png'); }
-.BrandCard.mana .BrandCard__image { background-image: url('../img/BrandCard-image-mana.png'); }
-.BrandCard.koso .BrandCard__image { background-image: url('../img/BrandCard-image-koso.png'); }
+.BrandCard.florens  .BrandCard__image { background-image: url('../img/BrandCard-image-florens.png'); }
+.BrandCard.weo      .BrandCard__image { background-image: url('../img/BrandCard-image-weo.png'); }
+.BrandCard.mana     .BrandCard__image { background-image: url('../img/BrandCard-image-mana.png'); }
+.BrandCard.koso     .BrandCard__image { background-image: url('../img/BrandCard-image-koso.png'); }
 
 .BrandCard__content {
   padding: 2.8rem;
