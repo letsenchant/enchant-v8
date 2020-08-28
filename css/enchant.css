@@ -1,0 +1,192 @@
+h1 { font-size: 5.4rem; }
+h2 { font-size: 2.1rem; }
+
+.Button {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 1.8rem 3.2rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+
+.Intro {
+  padding-top: 8.8rem;
+  margin-bottom: 4.2rem;
+}
+
+  .Intro h1 {
+    font-size: 5.4rem;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+
+  .Intro p {
+    font-size: 2.1rem;
+    color: #33333d;
+    line-height: 1.5;
+  }
+
+.LogoMark {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-image: url('../img/logomark.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px 64px;
+  margin-left: 0;
+  margin-bottom: 8.8rem;
+}
+
+.PastOrgs {
+  padding-top: 10rem;
+  overflow-x: scroll;
+}
+
+.Studies {
+  margin-bottom: 6.4rem;
+}
+
+.Study {}
+
+  .Study .Button {
+    text-align: left;
+  }
+
+.Study__heroImage {
+  height: 500px;
+  width: 100%;
+  background-color: red;
+  margin-left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 4.4rem;
+}
+
+.Study--TerritoryLaunch .Study__heroImage {
+  background-image: url('../img/Mar2019-VegCampaign-0006.jpg');
+}
+
+.Study__category {
+  text-align: left;
+  font-size: 1.4rem;
+  color: #606060;
+}
+
+.Study__title {
+  text-align: left;
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.Study__description {
+  text-align: left;
+  font-size: 1.8rem;
+  color: #33333d;
+  font-weight: 400;
+  margin-bottom: 3.4rem;
+  line-height: 1.488;
+}
+
+.Brands {
+  padding-top: 18rem;
+  background-image: url('../img/Rectangle-PinkFade.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 6.4rem;
+}
+
+.BrandsList {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 3.6rem;
+  padding-left: 4%;
+  padding-right: 4.4rem;
+  padding-top: 6.4rem;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.BrandsList::-webkit-scrollbar { width: 0 !important }
+.BrandsList::after {
+  content: '';
+  flex: 0 0 1.8rem;
+}
+
+.BrandCard {
+  flex: 0 0 auto;
+  width: 290px;
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,.08);
+  margin-right: 4.2rem;
+  transition: all .22s ease-in-out;
+}
+
+  .BrandCard:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all .22s ease-in-out;
+  }
+
+.BrandCard__image {
+  margin: 0;
+  height: 215px;
+  background-color: #ddd;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.BrandCard.florens  .BrandCard__image { background-image: url('../img/BrandCard-image-florens.png'); }
+.BrandCard.weo      .BrandCard__image { background-image: url('../img/BrandCard-image-weo.png'); }
+.BrandCard.mana     .BrandCard__image { background-image: url('../img/BrandCard-image-mana.png'); }
+.BrandCard.koso     .BrandCard__image { background-image: url('../img/BrandCard-image-koso.png'); }
+
+.BrandCard__content {
+  padding: 2.8rem;
+}
+
+.BrandCard__title {
+  font-size: 2.1rem;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+.BrandCard__description {
+  font-size: 1.5rem;
+  color: #33333d;
+  line-height: 1.48;
+  margin-bottom: 0;
+}
+
+  .BrandCard__description a {
+    color: #33333d;
+  }
+
+    .BrandCard__description a:hover {
+      color: #000;
+      text-decoration: underline;
+      text-decoration-style: dashed;
+    }
+
+.Contact {
+  padding: 28rem 0;
+}
+
+.Contact__title {
+  font-size: 4.4rem;
+}
+
+.Contact__CTA {
+  font-size: 1.6rem;
+  padding: 2rem 6rem;
+}
