@@ -1,0 +1,131 @@
+h1 {
+  font-size: 4.4rem;
+  font-weight: 350;
+}
+h2 { font-size: 2.1rem; }
+
+.Button {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 1.8rem 3.2rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.LogoMark {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: url('../img/logomark.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px 36px;
+  margin-left: 0;
+  margin-bottom: 8.8rem;
+  margin-top: 8.8rem;
+}
+
+.Intro {
+  padding-bottom: 20rem;
+}
+
+.Intro h1 {
+  font-size: 2.8rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .Intro h1 { font-size: 4.4rem; }
+}
+
+.section-title {
+  margin-bottom: 6.4rem;
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: .25em;
+}
+
+.ClientWork {
+  padding-bottom: 21rem;
+}
+
+.WorkCard {
+  margin-bottom: 12rem;
+}
+
+.WorkCard h4 { margin-top: 0 }
+
+
+.WorkCard__hero-image {
+  width: 100%;
+}
+
+.WorkCard__client {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.WorkCard__services {
+  color: #999999;
+  margin-bottom: 2em;
+  margin-top: 0;
+  line-height: 1.65;
+  font-weight: 350;
+}
+
+.WorkCard__summary {
+  line-height: 1.65;
+  margin-top: 0;
+  margin-bottom: 2em;
+  font-weight: 350;
+}
+
+.WorkCard__gallery {
+  padding: 3.2rem 0;
+}
+
+  .WorkCard__gallery img {
+    width: 100%;
+  }
+
+.PortfolioCompanies {
+  padding-bottom: 21rem;
+}
+
+
+.CollabBar {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2D2222;
+  background-color: rgba(255, 242, 237, 0.97);
+  backdrop-filter: blur(6px);
+}
+
+.CollabBar.--fixed { position: fixed; }
+
+.CollabBar a {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2D2222;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  @include transition;
+}
+
+.CollabBar a:hover {
+  color: black;
+  text-decoration-style: wavy;
+}
+
+.CollabBar a:visited {
+  color: black;
+}
+
+.CollabBar__text {
+  margin: auto;
+  padding: 1.8rem 0;
+}
