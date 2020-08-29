@@ -9,6 +9,7 @@
 .container-fluid {
   padding-right: 2rem;
   padding-left: 2rem;
+  max-width: 1200px
 }
 
 .row {
@@ -273,6 +274,11 @@
     width: 49rem;
   }
 
+  .container-fluid {
+    padding-right: 3.2rem;
+    padding-left: 3.2rem;
+  }
+
   .col-sm,
   .col-sm-1,
   .col-sm-2,
@@ -504,6 +510,11 @@
     width: 65rem;
   }
 
+  .container-fluid {
+    padding-right: 4.8rem;
+    padding-left: 4.8rem;
+  }
+
   .col-md,
   .col-md-1,
   .col-md-2,
@@ -733,6 +744,11 @@
 @media only screen and (min-width: 75em) {
   .container {
     width: 76rem;
+  }
+
+  .container-fluid {
+    padding-right: 5.4rem;
+    padding-left: 5.4rem;
   }
 
   .col-lg,
