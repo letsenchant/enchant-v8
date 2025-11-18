@@ -16,13 +16,13 @@ h2 { font-size: 2.1rem; }
 
 .LogoMark {
   display: block;
-  width: 36px;
-  height: 36px;
-  background-image: url('../img/logomark.png');
+  width: 72px;
+  height: 72px;
+  background-image: url('../img/enchant-2022-logo.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 36px 36px;
-  margin-left: 0;
+  background-size: 72px 72px;
+  margin-left: -18px;
   margin-bottom: 8.8rem;
   margin-top: 8.8rem;
 }
@@ -58,6 +58,7 @@ h2 { font-size: 2.1rem; }
 
 .WorkCard__hero-image {
   width: 100%;
+  border-radius: 7px;
 }
 
 .WorkCard__client {
