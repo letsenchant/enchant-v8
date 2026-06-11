@@ -1,5 +1,5 @@
 # www.robotstxt.org/
 
-# Allow crawling of all content except pitch explorations
+# Allow crawling of all content except vision pages
 User-agent: *
-Disallow: /pitch/
+Disallow: /vision/
