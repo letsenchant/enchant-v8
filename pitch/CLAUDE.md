@@ -16,6 +16,7 @@ The working thesis: Enchant helps funded health companies find and ship their ne
 | `ai-native.html` | CEOs/COOs with board-level AI pressure | The wedge SKU; easiest first yes |
 | `portfolio.html` | VCs + platform/operating partners | Worked privately via DMs, never the homepage |
 | `vision.html` | Paul + Brittany (joint) | Our-vision-together deck: after-tax scenarios with breakeven tick, promises, first 90 days, NBP painterly art (`img/`). Reframed 2026-06-11 from “Paul pitching Brittany” to shared we-voice. `noindex`, unlinked from client pages |
+| `evidence.html` | Anyone (audience-neutral) | The public receipts page: demand stats, execution-gap stats, jobs.fitt.co census, quotes, honest counters. Linked from vision's receipts fold; safe to link from client pages later. `noindex` |
 | `hub.html` | Paul (internal) | Navigator across all four + send-to guidance. `noindex`, linked from nowhere public |
 
 Client decks deliberately do NOT cross-link to each other or to the hub — a recipient should never discover the pitch multiverse. Only `vision.html` and `hub.html` link onward.

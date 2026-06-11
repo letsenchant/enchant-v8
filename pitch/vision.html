@@ -57,6 +57,29 @@
   .art-band { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 2.5rem); }
   .closing-art { max-width: 720px; margin: 0 auto 3rem; }
 
+  /* receipts unfurl */
+  .receipts-fold { margin: 1.6rem 0 0; max-width: 62ch; }
+  .receipts-fold summary {
+    cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.55rem;
+    font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-soft); border: 1px solid var(--line); border-radius: 99px;
+    padding: 0.5rem 1.1rem; transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .receipts-fold summary::-webkit-details-marker { display: none; }
+  .receipts-fold summary:hover { color: var(--ink); border-color: var(--ink); }
+  .receipts-fold .chev { transition: transform 0.25s ease; display: inline-block; }
+  .receipts-fold[open] .chev { transform: rotate(90deg); }
+  .fold-inner { margin-top: 1.4rem; padding: 1.6rem 1.7rem; background: var(--bone-deep); border: 1px solid var(--line); border-radius: 14px; animation: foldIn 0.4s ease; }
+  @keyframes foldIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+  .fold-inner ul { list-style: none; display: grid; gap: 0.95rem; margin: 0; padding: 0; }
+  .fold-inner li { font-size: 0.92rem; color: var(--ink-soft); padding-left: 1.15rem; position: relative; line-height: 1.55; }
+  .fold-inner li::before { content: ""; position: absolute; left: 0; top: 0.58em; width: 5px; height: 5px; border-radius: 50%; background: var(--ink); opacity: 0.5; }
+  .fold-inner li strong { color: var(--ink); }
+  .fold-inner a { color: var(--ink); font-weight: 600; text-decoration-color: var(--line); }
+  .fold-inner li a { white-space: nowrap; }
+  .fold-more { margin-top: 1.25rem; font-size: 0.92rem; }
+  @media (prefers-reduced-motion: reduce) { .fold-inner { animation: none; } .receipts-fold .chev { transition: none; } }
+
   /* breakeven tick */
   .bar { overflow: visible; }
   .bar .tick { position: absolute; left: 77%; top: -5px; bottom: -5px; width: 2px; border-radius: 2px; background: var(--ink); opacity: 0.5; }
@@ -98,6 +121,20 @@
       <div class="prose reveal" data-d="1">
         <p><strong>We’re free.</strong> For the first time in a decade, both crafts belong to us. Every health company’s board is asking for the AI answer, and in consumer health almost nobody selling them help has actually shipped Gen AI products at scale. We have. That intersection, health products, behavior design, and frontier AI, is nearly empty of credible people.</p>
         <p><strong>The buyers already exist.</strong> Funded health companies post-raise, under pressure to find their next growth engine, who can’t hire a founding-caliber team in time. Two of them tried to hire Paul outright this year. And it isn’t anecdote: more than half of 2025’s digital-health funding went to AI-enabled companies, and Fitt’s job board lists 48 open AI-titled roles across 23 funded health companies this week. The move is renting us as a pair: something nobody else can offer, because nobody else is us.</p>
+        <details class="receipts-fold">
+          <summary><span class="chev">→</span> The receipts, if you want them</summary>
+          <div class="fold-inner">
+            <ul>
+              <li>“AI-enabled startups captured <strong>54% of all US digital-health funding in 2025</strong>, up from 37% in 2024,” with a 61% valuation premium at Series C. <a href="https://rockhealth.com/insights/2025-year-end-digital-health-funding-overview-a-tale-of-two-markets/" target="_blank" rel="noopener">Rock Health · Jan 2026</a></li>
+              <li>Rock Health then <strong>retired its “AI deal” metric entirely</strong> this spring: “AI becomes table stakes in how digital health companies and their offerings are built and delivered.” <a href="https://rockhealth.com/insights/q1-2026-funding-overview-capital-continues-concentrating-and-four-other-market-signals/" target="_blank" rel="noopener">Rock Health · Apr 2026</a></li>
+              <li>Meanwhile <strong>only ~30% of completed gen-AI pilots ever reach production</strong>, and 41–52% of healthcare leaders name missing in-house AI expertise as a top barrier. <a href="https://www.bvp.com/atlas/the-healthcare-ai-adoption-index" target="_blank" rel="noopener">Bessemer × AWS × Bain · 2025</a></li>
+              <li>The census behind our number: <strong>48 AI-titled leadership roles across 23 funded health companies</strong> on Fitt’s job board, counted by hand on June 11, 2026: Headspace’s “Director, AI Enablement,” Hello Heart’s “Senior AI Builder,” WHOOP hiring four AI roles at once, Komodo’s VP-of-AI search open since February. <a href="https://jobs.fitt.co" target="_blank" rel="noopener">jobs.fitt.co</a></li>
+              <li>“In the past, whether you invest in AI was a strategic choice. Right now, <strong>it’s just an imperative</strong>.” — Matthew Woo, co-founder of Summer Health. <a href="https://www.outofpocket.health/podcasts/real-gen-ai-use-cases-in-healthcare-matthew-woo-co-founder-summer-health" target="_blank" rel="noopener">Out-of-Pocket podcast</a></li>
+              <li>And the case for hiring outside help at all: <strong>external partners ship successful AI roughly twice as often as internal builds</strong>. <a href="https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/" target="_blank" rel="noopener">MIT NANDA · 2025</a></li>
+            </ul>
+            <p class="fold-more"><a href="evidence.html">The full evidence file, every stat sourced and dated →</a></p>
+          </div>
+        </details>
         <p><strong>And it protects the real bets.</strong> The practice is the cash engine; Kasane and Coplay stay the equity engine. Client work funds them, sharpens them, and feeds them. It never eats them.</p>
       </div>
     </div>
