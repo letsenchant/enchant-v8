@@ -105,18 +105,21 @@
   }
 
   .eyebrow {
-    font-size: 0.78rem; font-weight: 600;
-    letter-spacing: 0.17em; text-transform: uppercase;
+    font-size: 0.74rem; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase;
     color: var(--ink-soft); margin-bottom: 1.6rem;
   }
   .hero h1 {
-    font-size: clamp(2.9rem, 6.6vw, 5.1rem);
+    font-size: clamp(3.1rem, 7.4vw, 5.8rem);
     max-width: 16ch;
+    font-weight: 390;
+    letter-spacing: -0.025em;
+    line-height: 1.04;
   }
   .hero h1 em { background: linear-gradient(92deg, #6048DE 0%, #AF6090 40%, #E5A29F 66%, #EAAF80 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .hero p.lede {
     margin-top: 2.1rem; max-width: 54ch;
-    font-size: clamp(1.07rem, 1.65vw, 1.28rem);
+    font-size: clamp(1.08rem, 1.7vw, 1.32rem);
     color: var(--ink-soft);
   }
   .hero-ctas { margin-top: 2.7rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
@@ -137,7 +140,7 @@
   .hero-note strong { color: var(--ink); }
 
   /* ---------- sections ---------- */
-  section { padding: clamp(4.5rem, 9.5vh, 7.5rem) 0; position: relative; }
+  section { padding: clamp(5rem, 11vh, 8.5rem) 0; position: relative; }
   section.tinted {
     background: linear-gradient(180deg, var(--bone-deep), var(--bone));
     border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
@@ -147,7 +150,7 @@
     font-family: 'Fraunces', serif; font-style: italic;
     color: var(--ink); opacity: 0.4; font-size: 1.05rem; flex-shrink: 0;
   }
-  .sec-head h2 { font-size: clamp(2rem, 3.8vw, 3.05rem); max-width: 24ch; }
+  .sec-head h2 { font-size: clamp(2.1rem, 4.2vw, 3.4rem); max-width: 24ch; font-weight: 400; letter-spacing: -0.018em; }
   .prose { max-width: 62ch; color: var(--ink-soft); font-size: 1.07rem; }
   .prose p + p { margin-top: 1.25rem; }
   .prose strong { color: var(--ink); }
@@ -351,3 +354,9 @@
   display: block; font-size: 0.72rem; letter-spacing: 0.07em; text-transform: uppercase;
   color: var(--ink-soft); opacity: 0.7; margin-top: 0.6rem; font-weight: 600;
 }
+
+/* deck art (NBP anime key visuals) */
+.vision-art { margin: 3.2rem auto 0; border-radius: 20px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 34px 80px -36px rgba(36,27,21,0.5); }
+.vision-art img { display: block; width: 100%; height: auto; }
+.art-band { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 2.5rem); }
+.closing-art { max-width: 720px; margin: 0 auto 3rem; }
