@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enchant · Our next season</title>
+<meta name="description" content="A vision of the Enchant studio: two principals, one client at a time, a practice that funds the products and protects the family rhythm.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="https://www.enchant.co/img/enchant-icon-2022.png">
+<link rel="apple-touch-icon" href="https://www.enchant.co/img/enchant-icon-2022.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+  /* golden hour: this page reads at dusk, not morning */
+  :root {
+    --bone: #FAF1E8;
+    --bone-deep: #F3E6D6;
+    --line: rgba(36, 27, 21, 0.14);
+  }
+  .mesh .m1 { background: radial-gradient(circle at 38% 38%, rgba(238,172,108,0.95), rgba(238,172,108,0) 65%); }
+  .mesh .m2 { background: radial-gradient(circle at 60% 40%, rgba(194,93,57,0.4), rgba(194,93,57,0) 66%); }
+  .mesh .m3 { background: radial-gradient(circle at 50% 50%, rgba(139,110,224,0.26), rgba(139,110,224,0) 64%); }
+  .mesh .m4 { background: radial-gradient(circle at 50% 42%, rgba(201,122,74,0.22), rgba(201,122,74,0) 62%); }
+
+  .hero h1 { max-width: 14ch; }
+  .from { font-size: 0.86rem; color: var(--ink-soft); margin-top: 1.5rem; font-style: italic; font-family: 'Fraunces', serif; }
+
+  /* promises */
+  .promises { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem; }
+  @media (max-width: 780px) { .promises { grid-template-columns: 1fr; } }
+  .promise { border-left: 2px solid var(--clay); padding: 0.4rem 0 0.4rem 1.4rem; }
+  .promise h3 { font-size: 1.28rem; margin-bottom: 0.4rem; }
+  .promise p { font-size: 0.95rem; color: var(--ink-soft); }
+
+  /* scenario bars */
+  .scenarios { display: grid; gap: 1.6rem; max-width: 760px; }
+  .scenario .label { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 0.55rem; }
+  .scenario .label h3 { font-size: 1.22rem; }
+  .scenario .label span { font-size: 0.85rem; color: var(--ink-soft); }
+  .bar { height: 14px; border-radius: 99px; background: var(--bone-deep); border: 1px solid var(--line); overflow: hidden; position: relative; }
+  .bar i {
+    position: absolute; inset: 0; border-radius: 99px;
+    background: linear-gradient(90deg, var(--peach), var(--clay));
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s;
+  }
+  .visible .bar i { transform: scaleX(var(--fill)); }
+  .scenario .note { font-size: 0.88rem; color: var(--ink-soft); margin-top: 0.5rem; }
+  .scenario .note strong { color: var(--clay-deep); }
+  @media (prefers-reduced-motion: reduce) { .bar i { transition: none; transform: scaleX(var(--fill)); } }
+
+  /* season arc reuses .arc styles */
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="wordmark" href="#top" aria-label="Enchant"><img class="brand-logo" src="https://www.enchant.co/img/enchant-icon-2022.png" alt="" loading="eager"><span class="brand-name">enchant</span></a>
+    <a class="nav-cta" href="growth-lab.html">See the client pitch</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero">
+    <div class="mesh" aria-hidden="true"><i class="m1"></i><i class="m2"></i><i class="m3"></i><i class="m4"></i></div>
+    <div class="wrap">
+      <p class="eyebrow reveal">Enchant · The two of us</p>
+      <h1 class="reveal" data-d="1">The studio we <em>already are</em>.</h1>
+      <p class="lede reveal" data-d="2">You spent a decade designing the Gen AI products everyone else is still catching up to. I’ve spent fifteen years taking health products from zero to revenue. This is the practice where those two careers become one studio: a few great clients a year, built around our family, funding the products we believe in.</p>
+      <p class="from reveal" data-d="3">For Brittany. Walk through it, mark what resonates, and tell me what would make it a yes.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">01</span>
+        <h2>Why this works now</h2>
+      </div>
+      <div class="prose reveal" data-d="1">
+        <p><strong>You’re free.</strong> For the first time in a decade, your craft belongs to you. Every health company’s board is asking for the AI answer, and almost nobody selling them help has actually shipped Gen AI products at scale. You have. That intersection, health products, behavior design, and frontier AI, is nearly empty of credible people.</p>
+        <p><strong>The buyers already exist.</strong> Funded health companies post-raise, under pressure to find their next growth engine, who can’t hire a founding-caliber team in time. Two of them tried to hire me this year alone. The move is renting us as a pair: something nobody else can offer, because nobody else is us.</p>
+        <p><strong>And it protects the real bets.</strong> The practice is the cash engine; Kasane and Coplay stay the equity engine. Client work funds them, sharpens them, and feeds them. It never eats them.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tinted">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">02</span>
+        <h2>What we sell</h2>
+      </div>
+      <div class="cards">
+        <div class="card reveal">
+          <p class="card-tag">The front door</p>
+          <h3>Product + AI Diagnostic</h3>
+          <p class="card-meta">2 weeks · $36k</p>
+          <p class="body">A two-week read of a company’s product, audience, and AI readiness. Small enough for an easy first yes; designed to grow into the flagship. I can run these mostly solo while you rest.</p>
+        </div>
+        <div class="card reveal" id="flagship" data-d="1">
+          <p class="card-tag">The flagship</p>
+          <h3>Growth Lab</h3>
+          <p class="card-meta">6–10 weeks · $150–250k</p>
+          <p class="body">An embedded founding-team pod: one growth bet, thesis to shipped product to first revenue. This is the one that needs us both, and the one that pays for the year.</p>
+        </div>
+        <div class="card reveal" data-d="2">
+          <p class="card-tag">The long game</p>
+          <h3>AI-Native Operations</h3>
+          <p class="card-meta">Monthly · $15–20k/mo</p>
+          <p class="body">A standing retainer building a client’s internal AI systems. Steady, calm work that compounds, and a natural continuation after a flagship ends.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">03</span>
+        <h2>What one year looks like</h2>
+      </div>
+      <div class="scenarios">
+        <div class="scenario reveal">
+          <div class="label"><h3>The floor</h3><span>1 flagship + 2 diagnostics · ~10 weeks billed</span></div>
+          <div class="bar"><i style="--fill: 0.45;"></i></div>
+          <p class="note"><strong>≈ $222k.</strong> One good engagement plus two front-door projects covers our year, at roughly one-fifth of our working time. Everything else stays for the kids, the products, and rest.</p>
+        </div>
+        <div class="scenario reveal" data-d="1">
+          <div class="label"><h3>The target</h3><span>2 flagships + 2 diagnostics · 16–24 weeks billed</span></div>
+          <div class="bar"><i style="--fill: 0.85;"></i></div>
+          <p class="note"><strong>≈ $372–472k.</strong> A strong year. Rebuilds runway and funds the products properly, still under a third of our time.</p>
+        </div>
+        <div class="scenario reveal" data-d="2">
+          <div class="label"><h3>The ceiling we won’t chase</h3><span>3+ flagships, back to back</span></div>
+          <div class="bar"><i style="--fill: 1; background: linear-gradient(90deg, #C9C1B6, #8A8178);"></i></div>
+          <p class="note">More money, and it eats the products, the family rhythm, and us. We don’t staff this year. That’s a promise, not a forecast.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tinted">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">04</span>
+        <h2>The promises</h2>
+      </div>
+      <div class="promises">
+        <div class="promise reveal">
+          <h3>You rest first</h3>
+          <p>You shape this with me now; your hands join when you’re ready. The diagnostic can run Paul-heavy. Nothing is scheduled against your recovery.</p>
+        </div>
+        <div class="promise reveal" data-d="1">
+          <h3>One client at a time</h3>
+          <p>Always. It protects the quality, the kids window, and the products. We say no to the second flagship until the first is done and we’ve had a product block.</p>
+        </div>
+        <div class="promise reveal" data-d="2">
+          <h3>The kids window is the trunk</h3>
+          <p>Everything else branches around it. Utilization stays under a third of our time, by design, every scenario.</p>
+        </div>
+        <div class="promise reveal" data-d="3">
+          <h3>We can change this</h3>
+          <p>A standing clause between us, reviewed at every CEO review. If it stops serving us, we redesign it or wind it down. No sunk-cost loyalty to a structure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">05</span>
+        <h2>Your part, when you’re ready</h2>
+      </div>
+      <div class="prose reveal" data-d="1">
+        <p>Design leadership and the hands-on craft you’ve been missing: research synthesis, product design, the Gen AI patterns you know better than almost anyone selling them. On a flagship we’re a pair: I take strategy, build, and the sales motion; you take the design half whole.</p>
+        <p>And half the differentiation is simply that you exist. Clients can’t hire a Microsoft Gen AI principal designer. They can rent one, for a season, with me attached.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tinted">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">06</span>
+        <h2>The first ninety days</h2>
+      </div>
+      <div class="arc">
+        <div class="arc-step reveal">
+          <h3>Walk it together</h3>
+          <p>You and me, this plan, the pitch pages. Mark what resonates and what doesn’t. You pick the positioning that feels like us.</p>
+          <span class="wk">Weeks 1–2</span>
+        </div>
+        <div class="arc-step reveal" data-d="1">
+          <h3>Open the doors</h3>
+          <p>Personal notes to the warmest people in the network: past clients, fund partners, founders we already know. No blasts, ever.</p>
+          <span class="wk">Weeks 2–4</span>
+        </div>
+        <div class="arc-step reveal" data-d="2">
+          <h3>First conversations</h3>
+          <p>Take two or three pitch calls. Aim to close one diagnostic as the try-on project, for the client and for our working rhythm.</p>
+          <span class="wk">Weeks 4–8</span>
+        </div>
+        <div class="arc-step reveal" data-d="3">
+          <h3>Harvest and decide</h3>
+          <p>Run it, learn, then a checkpoint together: lean in, keep it light, or change the design. Your read carries the most weight.</p>
+          <span class="wk">Weeks 8–12</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="closing">
+    <div class="mesh" aria-hidden="true"><i class="m1"></i><i class="m2"></i><i class="m4"></i></div>
+    <div class="wrap">
+      <p class="eyebrow reveal">Enchant · Est. 2017 · Replanted 2026</p>
+      <h2 class="reveal" data-d="1">A practice that funds the garden, <em>and never becomes the weeds</em>.</h2>
+      <p class="reveal" data-d="2">This is a draft of a life, not a contract. Read it, sit with it, and tell me what would make it a yes.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>Enchant · Paul &amp; Brittany Mederos · Santa Clara, CA</span>
+    <span><a href="growth-lab.html">Client pitch</a> · <a href="ai-native.html">AI-native</a> · <a href="portfolio.html">Portfolio</a></span>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

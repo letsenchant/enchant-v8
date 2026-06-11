@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enchant · Pitch deck hub</title>
+<meta name="description" content="Internal navigator for the Enchant pitch micro-sites.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="https://www.enchant.co/img/enchant-icon-2022.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+  .hub-list { display: grid; gap: 1.3rem; max-width: 860px; margin-top: 1rem; }
+  .deck {
+    display: grid; grid-template-columns: 1fr auto; gap: 1.2rem; align-items: center;
+    background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
+    padding: 1.8rem 1.9rem; text-decoration: none; color: var(--ink);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative; overflow: hidden;
+  }
+  .deck::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--clay), var(--peach));
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .deck:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); border-color: rgba(180,74,31,0.3); }
+  .deck:hover::before { transform: scaleX(1); }
+  .deck h2 { font-size: 1.5rem; margin-bottom: 0.3rem; }
+  .deck .send { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--clay); margin-bottom: 0.55rem; }
+  .deck p { font-size: 0.94rem; color: var(--ink-soft); max-width: 56ch; }
+  .deck .go { font-family: 'Fraunces', serif; font-style: italic; font-size: 1.4rem; color: var(--clay); transition: transform 0.25s ease; }
+  .deck:hover .go { transform: translateX(5px); }
+  @media (max-width: 640px) { .deck { grid-template-columns: 1fr; } .deck .go { display: none; } }
+  .hub-note { margin-top: 2.6rem; font-size: 0.88rem; color: var(--ink-soft); max-width: 68ch; }
+  .hub-note strong { color: var(--clay-deep); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="wordmark" href="hub.html" aria-label="Enchant"><img class="brand-logo" src="https://www.enchant.co/img/enchant-icon-2022.png" alt="" loading="eager"><span class="brand-name">enchant</span></a>
+    <a class="nav-cta" href="https://enchant.co">Current enchant.co</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero" style="padding-bottom: 2rem;">
+    <div class="mesh" aria-hidden="true"><i class="m1"></i><i class="m2"></i><i class="m3"></i><i class="m4"></i></div>
+    <div class="wrap">
+      <p class="eyebrow reveal">Internal · Pitch deck hub</p>
+      <h1 class="reveal" data-d="1" style="font-size: clamp(2.4rem, 5vw, 3.6rem);">One studio, <em>four doors</em>.</h1>
+      <p class="lede reveal" data-d="2">Every Enchant pitch surface in one place. Each page is sendable on its own; nothing links back here from the client decks.</p>
+    </div>
+  </div>
+
+  <section style="padding-top: 1rem;">
+    <div class="wrap">
+      <div class="hub-list">
+        <a class="deck reveal" href="growth-lab.html">
+          <div>
+            <p class="send">Send to · Series A–C founders &amp; CPOs</p>
+            <h2>Growth Lab · the flagship</h2>
+            <p>The founding product team for your next bet. The default pitch, and the strongest positioning. The candidate to become the next enchant.co.</p>
+          </div>
+          <span class="go">→</span>
+        </a>
+        <a class="deck reveal" data-d="1" href="ai-native.html">
+          <div>
+            <p class="send">Send to · CEOs/COOs with board-level AI pressure</p>
+            <h2>AI-Native · the wedge</h2>
+            <p>Your AI story shouldn’t be a slide. The easiest first yes in 2026; often converts into a Growth Lab.</p>
+          </div>
+          <span class="go">→</span>
+        </a>
+        <a class="deck reveal" data-d="2" href="portfolio.html">
+          <div>
+            <p class="send">Send to · VCs &amp; platform/operating partners</p>
+            <h2>Portfolio · the channel</h2>
+            <p>Product partners for your health portfolio. Worked privately through DMs and intros, never the homepage.</p>
+          </div>
+          <span class="go">→</span>
+        </a>
+        <a class="deck reveal" data-d="3" href="vision.html">
+          <div>
+            <p class="send">Send to · Brittany, with a cup of tea</p>
+            <h2>Our next season · the vision</h2>
+            <p>The two-of-us deck: what we sell, what one year looks like, the promises, and the first ninety days.</p>
+          </div>
+          <span class="go">→</span>
+        </a>
+      </div>
+      <p class="hub-note reveal">Strategy, pricing rationale, warm-target lists, and research live in <strong>paul-context/projects/enchant-consulting/</strong>, never on this public site. Numbers on the client pages are the diligence-safe versions; sources and flags are in the session notes.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>Enchant · Internal hub</span>
+    <span><a href="https://enchant.co">enchant.co</a></span>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
