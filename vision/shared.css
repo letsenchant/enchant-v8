@@ -82,8 +82,8 @@
     padding: clamp(6rem, 15vh, 11rem) 0 clamp(5rem, 11vh, 8.5rem);
     overflow: clip;
   }
-  .mesh { position: absolute; inset: -20% -10%; z-index: -1; filter: blur(72px) saturate(1.08); }
-  .mesh i { position: absolute; border-radius: 50%; mix-blend-mode: multiply; }
+  .mesh { position: absolute; inset: -20% -10%; z-index: -1; filter: saturate(1.08); }
+  .mesh i { position: absolute; border-radius: 50%; mix-blend-mode: multiply; filter: blur(72px); will-change: transform; }
   .mesh .m1 { width: 56vw; height: 56vw; min-width: 540px; min-height: 540px; left: -12%; top: -18%;
     background: radial-gradient(circle at 38% 38%, rgba(167,138,220,0.6), rgba(167,138,220,0) 65%);
     animation: drift1 26s ease-in-out infinite alternate; }
