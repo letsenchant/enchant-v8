@@ -15,7 +15,7 @@ The working thesis: Enchant helps funded health companies find and ship their ne
 | `growth-lab.html` | Series A–C founders/CPOs | Growth Lab flagship pitch; the candidate to swap into enchant.co's index when Paul + Brittany pick the winner |
 | `ai-native.html` | CEOs/COOs with board-level AI pressure | The wedge SKU; easiest first yes |
 | `portfolio.html` | VCs + platform/operating partners | Worked privately via DMs, never the homepage |
-| `vision.html` | Brittany | The two-of-us deck: scenarios, promises, first 90 days. `noindex`, unlinked from client pages |
+| `vision.html` | Paul + Brittany (joint) | Our-vision-together deck: after-tax scenarios with breakeven tick, promises, first 90 days, NBP painterly art (`img/`). Reframed 2026-06-11 from “Paul pitching Brittany” to shared we-voice. `noindex`, unlinked from client pages |
 | `hub.html` | Paul (internal) | Navigator across all four + send-to guidance. `noindex`, linked from nowhere public |
 
 Client decks deliberately do NOT cross-link to each other or to the hub — a recipient should never discover the pitch multiverse. Only `vision.html` and `hub.html` link onward.
@@ -24,7 +24,8 @@ Client decks deliberately do NOT cross-link to each other or to the hub — a re
 
 - `shared.css` holds the whole system; each page adds only a small page-specific `<style>` block (e.g., `vision.html`'s golden-hour palette overrides).
 - Type: **Fraunces** (display serif, weight ~430) + **Inter** (body/UI). Palette: bone `#FBF7F0`, ink `#241B15`, clay `#B44A1F`, peach `#F4C99B`, moss `#5E7259`, a whisper of violet `#8B6EE0` inside mesh gradients only (echoes the enchant.co orb logo).
-- Light story: client pages read as **morning light** (peach/rose mesh); the vision deck reads as **golden hour** (amber/rose/violet overrides).
+- Light story (2026-06-11 PM rev): **structure is stark ink/black** (CTAs, numerals, hairlines — mirrors enchant.co's black-CTA register); **warmth comes from rainbow meshes** sampled from Paul's mesh-gradient pack (`~/Downloads/Mesh Gradients/JPG`): client pages = “Egg Sour” palette (violet `#6048DE`, magenta `#AF6090`, butter `#FCF2B6`, rose `#E5A29F`, lavender `#A78ADC`), vision deck = “Royal Heath” + amber (periwinkle `#9FA1F6`, berry `#B95C8D`, amber `#EAAF6E`, orchid `#D49EE0`). Clay survives only in the logo orb + art. Hero/closing `em` = rainbow gradient text.
+- `vision.html` carries Nano Banana Pro painterly art (`img/garden-couple.jpg`, `img/studio.jpg`, `img/garden-dusk.jpg`; golden-hour palette, generated 2026-06-11 via the cookbook recipe).
 - Motion: animated mesh blobs (`drift` keyframes), staggered scroll reveals (`data-d="1..4"` delays), card lift + gradient-hairline micro-interactions, arrow nudges on CTAs. Everything respects `prefers-reduced-motion`.
 - The flagship card uses `#flagship` (id selector) so no section-level rule can outrank its dark background — this fixed a real specificity bug where `section.tinted .card` beat `.card.flagship` and left cream text on a white card.
 
@@ -38,5 +39,5 @@ Client decks deliberately do NOT cross-link to each other or to the hub — a re
 ## Privacy
 
 - Assume anything here is publicly reachable once pushed. No private addresses, family details, raw exports, warm-target lists, or internal strategy notes.
-- `vision.html` is written to be public-safe (no household burn figures; scenario revenue uses already-public SKU prices) but is `noindex` and unlinked. If Paul wants it fully private, move it to a folder with a `.private` file — it then loses its URL.
+- `vision.html` scenario math is after-tax (blended ~34% effective; derivation in `paul-context/projects/enchant-consulting/business-plan.md` §6) and the breakeven tick makes a monthly family number inferable — Paul approved this trade 2026-06-11. Stays `noindex` and unlinked. If Paul wants it fully private, move it to a folder with a `.private` file — it then loses its URL.
 - Deeper strategy, target lists, research, and CSVs live in `paul-context/projects/enchant-consulting/`, never here.

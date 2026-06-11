@@ -19,10 +19,10 @@
     --bone-deep: #F3E6D6;
     --line: rgba(36, 27, 21, 0.14);
   }
-  .mesh .m1 { background: radial-gradient(circle at 38% 38%, rgba(238,172,108,0.95), rgba(238,172,108,0) 65%); }
-  .mesh .m2 { background: radial-gradient(circle at 60% 40%, rgba(194,93,57,0.4), rgba(194,93,57,0) 66%); }
-  .mesh .m3 { background: radial-gradient(circle at 50% 50%, rgba(139,110,224,0.26), rgba(139,110,224,0) 64%); }
-  .mesh .m4 { background: radial-gradient(circle at 50% 42%, rgba(201,122,74,0.22), rgba(201,122,74,0) 62%); }
+  .mesh .m1 { background: radial-gradient(circle at 38% 38%, rgba(159,161,246,0.62), rgba(159,161,246,0) 65%); }
+  .mesh .m2 { background: radial-gradient(circle at 60% 40%, rgba(185,92,141,0.34), rgba(185,92,141,0) 66%); }
+  .mesh .m3 { background: radial-gradient(circle at 50% 50%, rgba(234,175,110,0.48), rgba(234,175,110,0) 64%); }
+  .mesh .m4 { background: radial-gradient(circle at 50% 42%, rgba(212,158,224,0.38), rgba(212,158,224,0) 62%); }
 
   .hero h1 { max-width: 14ch; }
   .from { font-size: 0.86rem; color: var(--ink-soft); margin-top: 1.5rem; font-style: italic; font-family: 'Fraunces', serif; }
@@ -30,7 +30,7 @@
   /* promises */
   .promises { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem; }
   @media (max-width: 780px) { .promises { grid-template-columns: 1fr; } }
-  .promise { border-left: 2px solid var(--clay); padding: 0.4rem 0 0.4rem 1.4rem; }
+  .promise { border-left: 2px solid var(--ink); padding: 0.4rem 0 0.4rem 1.4rem; }
   .promise h3 { font-size: 1.28rem; margin-bottom: 0.4rem; }
   .promise p { font-size: 0.95rem; color: var(--ink-soft); }
 
@@ -42,7 +42,7 @@
   .bar { height: 14px; border-radius: 99px; background: var(--bone-deep); border: 1px solid var(--line); overflow: hidden; position: relative; }
   .bar i {
     position: absolute; inset: 0; border-radius: 99px;
-    background: linear-gradient(90deg, var(--peach), var(--clay));
+    background: linear-gradient(90deg, #9FA1F6, #D49EE0, #EAAF6E);
     transform: scaleX(0); transform-origin: left;
     transition: transform 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s;
   }
@@ -50,6 +50,17 @@
   .scenario .note { font-size: 0.88rem; color: var(--ink-soft); margin-top: 0.5rem; }
   .scenario .note strong { color: var(--clay-deep); }
   @media (prefers-reduced-motion: reduce) { .bar i { transition: none; transform: scaleX(var(--fill)); } }
+
+  /* generated art */
+  .vision-art { margin: 3.2rem auto 0; border-radius: 20px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 34px 80px -36px rgba(36,27,21,0.5); }
+  .vision-art img { display: block; width: 100%; height: auto; }
+  .art-band { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 2.5rem); }
+  .closing-art { max-width: 720px; margin: 0 auto 3rem; }
+
+  /* breakeven tick */
+  .bar { overflow: visible; }
+  .bar .tick { position: absolute; left: 77%; top: -5px; bottom: -5px; width: 2px; border-radius: 2px; background: var(--ink); opacity: 0.5; }
+  .scenarios-note { font-size: 0.84rem; color: var(--ink-soft); margin-top: 1.3rem; max-width: 70ch; }
 
   /* season arc reuses .arc styles */
 </style>
@@ -70,8 +81,11 @@
     <div class="wrap">
       <p class="eyebrow reveal">Enchant · The two of us</p>
       <h1 class="reveal" data-d="1">The studio we <em>already are</em>.</h1>
-      <p class="lede reveal" data-d="2">You spent a decade designing the Gen AI products everyone else is still catching up to. I’ve spent fifteen years taking health products from zero to revenue. This is the practice where those two careers become one studio: a few great clients a year, built around our family, funding the products we believe in.</p>
-      <p class="from reveal" data-d="3">For Brittany. Walk through it, mark what resonates, and tell me what would make it a yes.</p>
+      <p class="lede reveal" data-d="2">Between us: a decade designing the Gen AI products everyone else is still catching up to, and fifteen years taking health products from zero to revenue. This is the practice where two careers become one studio: a few great clients a year, built around our family, funding the products we believe in.</p>
+      <p class="from reveal" data-d="3">A draft for the two of us. Mark what resonates, change what doesn’t. It becomes the plan when we both say yes.</p>
+      <figure class="vision-art reveal" data-d="4">
+        <img src="img/garden-couple.jpg" alt="Painterly illustration of the two of us at golden hour, tools in hand, looking out over a terraced garden we planted." loading="eager">
+      </figure>
     </div>
   </div>
 
@@ -82,8 +96,8 @@
         <h2>Why this works now</h2>
       </div>
       <div class="prose reveal" data-d="1">
-        <p><strong>You’re free.</strong> For the first time in a decade, your craft belongs to you. Every health company’s board is asking for the AI answer, and in consumer health almost nobody selling them help has actually shipped Gen AI products at scale. You have. That intersection, health products, behavior design, and frontier AI, is nearly empty of credible people.</p>
-        <p><strong>The buyers already exist.</strong> Funded health companies post-raise, under pressure to find their next growth engine, who can’t hire a founding-caliber team in time. Two of them tried to hire me this year alone. And it isn’t anecdote: more than half of 2025’s digital-health funding went to AI-enabled companies, and Fitt’s job board lists 48 open AI-titled roles across 23 funded health companies this week. The move is renting us as a pair: something nobody else can offer, because nobody else is us.</p>
+        <p><strong>We’re free.</strong> For the first time in a decade, both crafts belong to us. Every health company’s board is asking for the AI answer, and in consumer health almost nobody selling them help has actually shipped Gen AI products at scale. We have. That intersection, health products, behavior design, and frontier AI, is nearly empty of credible people.</p>
+        <p><strong>The buyers already exist.</strong> Funded health companies post-raise, under pressure to find their next growth engine, who can’t hire a founding-caliber team in time. Two of them tried to hire Paul outright this year. And it isn’t anecdote: more than half of 2025’s digital-health funding went to AI-enabled companies, and Fitt’s job board lists 48 open AI-titled roles across 23 funded health companies this week. The move is renting us as a pair: something nobody else can offer, because nobody else is us.</p>
         <p><strong>And it protects the real bets.</strong> The practice is the cash engine; Kasane and Coplay stay the equity engine. Client work funds them, sharpens them, and feeds them. It never eats them.</p>
       </div>
     </div>
@@ -100,7 +114,7 @@
           <p class="card-tag">The front door</p>
           <h3>Product + AI Diagnostic</h3>
           <p class="card-meta">2 weeks · $36k</p>
-          <p class="body">A two-week read of a company’s product, audience, and AI readiness. Small enough for an easy first yes; designed to grow into the flagship. I can run these mostly solo while you rest.</p>
+          <p class="body">A two-week read of a company’s product, audience, and AI readiness. Small enough for an easy first yes; designed to grow into the flagship. One of us can run these solo while the other rests or builds.</p>
         </div>
         <div class="card reveal" id="flagship" data-d="1">
           <p class="card-tag">The flagship</p>
@@ -124,23 +138,27 @@
         <span class="sec-num">03</span>
         <h2>What one year looks like</h2>
       </div>
+      <div class="prose reveal" data-d="1" style="margin-bottom: 2.4rem;">
+        <p>Honest math, after taxes. Roughly a third of every dollar goes to federal, California, and self-employment tax, so the bars below show what actually lands each month, measured against the family breakeven line.</p>
+      </div>
       <div class="scenarios">
         <div class="scenario reveal">
           <div class="label"><h3>The floor</h3><span>1 flagship + 2 diagnostics · ~10 weeks billed</span></div>
-          <div class="bar"><i style="--fill: 0.45;"></i></div>
-          <p class="note"><strong>≈ $222k.</strong> One good engagement plus two front-door projects covers our year, at roughly one-fifth of our working time. Everything else stays for the kids, the products, and rest.</p>
+          <div class="bar"><i style="--fill: 0.47;"></i><span class="tick" aria-hidden="true"></span></div>
+          <p class="note"><strong>$222k gross ≈ $12k a month after taxes.</strong> A safe landing, and honestly short of the line: it covers about seven months of our year. The floor buys time; it doesn’t buy the year.</p>
         </div>
         <div class="scenario reveal" data-d="1">
           <div class="label"><h3>The target</h3><span>2 flagships + 2 diagnostics · 16–24 weeks billed</span></div>
-          <div class="bar"><i style="--fill: 0.85;"></i></div>
-          <p class="note"><strong>≈ $372–472k.</strong> A strong year. Rebuilds runway and funds the products properly, still under a third of our time.</p>
+          <div class="bar"><i style="--fill: 1;"></i><span class="tick" aria-hidden="true"></span></div>
+          <p class="note"><strong>$372–472k gross ≈ $20–26k a month after taxes.</strong> This is the real breakeven year: it clears the line, with margin at the top of the range, still under a third of our working time.</p>
         </div>
         <div class="scenario reveal" data-d="2">
           <div class="label"><h3>The ceiling we won’t chase</h3><span>3+ flagships, back to back</span></div>
-          <div class="bar"><i style="--fill: 1; background: linear-gradient(90deg, #C9C1B6, #8A8178);"></i></div>
+          <div class="bar"><i style="--fill: 1; background: linear-gradient(90deg, #C9C1B6, #8A8178);"></i><span class="tick" aria-hidden="true"></span></div>
           <p class="note">More money, and it eats the products, the family rhythm, and us. We don’t staff this year. That’s a promise, not a forecast.</p>
         </div>
       </div>
+      <p class="scenarios-note reveal" data-d="3">The mark on each bar is the family breakeven line, after taxes. Gross figures use the public engagement prices; the tax rate is our blended 2025 effective rate across federal, California, and self-employment.</p>
     </div>
   </section>
 
@@ -152,8 +170,8 @@
       </div>
       <div class="promises">
         <div class="promise reveal">
-          <h3>You rest first</h3>
-          <p>You shape this with me now; your hands join when you’re ready. The diagnostic can run Paul-heavy. Nothing is scheduled against your recovery.</p>
+          <h3>Rest comes first</h3>
+          <p>Recovery is scheduled before revenue. We shape this together now; hands join when they’re ready, and the diagnostic can run solo until then. Nothing gets booked against rest.</p>
         </div>
         <div class="promise reveal" data-d="1">
           <h3>One client at a time</h3>
@@ -175,14 +193,20 @@
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="sec-num">05</span>
-        <h2>Your part, when you’re ready</h2>
+        <h2>How we split the work</h2>
       </div>
       <div class="prose reveal" data-d="1">
-        <p>Design leadership and the hands-on craft you’ve been missing: research synthesis, product design, the Gen AI patterns you know better than almost anyone selling them. On a flagship we’re a pair: I take strategy, build, and the sales motion; you take the design half whole.</p>
-        <p>And half the differentiation is simply that you exist. Clients can’t hire a Microsoft Gen AI principal designer. They can rent one, for a season, with me attached.</p>
+        <p>On a flagship we’re a pair, and each half is whole: strategy, AI build, and the sales motion on one side; design leadership, research synthesis, and the Gen AI craft almost nobody selling it actually has on the other.</p>
+        <p>And half the differentiation is simply that this pair exists. Clients can’t hire a Microsoft Gen AI principal designer or a serial health founder. For a season, they can rent both.</p>
       </div>
     </div>
   </section>
+
+  <div class="art-band reveal">
+    <figure class="vision-art">
+      <img src="img/studio.jpg" alt="Painterly illustration of a quiet studio at golden hour: two desks side by side, facing the garden." loading="lazy">
+    </figure>
+  </div>
 
   <section class="tinted">
     <div class="wrap">
@@ -193,7 +217,7 @@
       <div class="arc">
         <div class="arc-step reveal">
           <h3>Walk it together</h3>
-          <p>You and me, this plan, the pitch pages. Mark what resonates and what doesn’t. You pick the positioning that feels like us.</p>
+          <p>The two of us, this plan, the pitch pages. We mark what resonates and what doesn’t, and pick the positioning that feels like us.</p>
           <span class="wk">Weeks 1–2</span>
         </div>
         <div class="arc-step reveal" data-d="1">
@@ -208,7 +232,7 @@
         </div>
         <div class="arc-step reveal" data-d="3">
           <h3>Harvest and decide</h3>
-          <p>Run it, learn, then a checkpoint together: lean in, keep it light, or change the design. Your read carries the most weight.</p>
+          <p>Run it, learn, then a checkpoint together: lean in, keep it light, or change the design. Rest and family carry the most weight in that call.</p>
           <span class="wk">Weeks 8–12</span>
         </div>
       </div>
@@ -218,9 +242,12 @@
   <div class="closing">
     <div class="mesh" aria-hidden="true"><i class="m1"></i><i class="m2"></i><i class="m4"></i></div>
     <div class="wrap">
+      <figure class="vision-art closing-art reveal">
+        <img src="img/garden-dusk.jpg" alt="Painterly illustration of a young garden at dusk: seedlings in raised beds, a trellis just beginning to climb, fireflies." loading="lazy">
+      </figure>
       <p class="eyebrow reveal">Enchant · Est. 2017 · Replanted 2026</p>
       <h2 class="reveal" data-d="1">A practice that funds the garden, <em>and never becomes the weeds</em>.</h2>
-      <p class="reveal" data-d="2">This is a draft of a life, not a contract. Read it, sit with it, and tell me what would make it a yes.</p>
+      <p class="reveal" data-d="2">This is a draft of a life, not a contract. We read it, sit with it, and shape it until it’s ours.</p>
     </div>
   </div>
 
