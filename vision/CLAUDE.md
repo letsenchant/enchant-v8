@@ -19,7 +19,7 @@ The working thesis: Enchant helps funded health companies find and ship their ne
 | `evidence.html` | Anyone (audience-neutral) | The public receipts page: demand stats, execution-gap stats, jobs.fitt.co census, quotes, honest counters. Linked from partnership's receipts fold; safe to link from client pages later. `noindex` |
 | `index.html` | Paul + Brittany (the router) | Navigator across all four + send-to guidance. `noindex`, linked from nowhere public |
 
-Client decks deliberately do NOT cross-link to each other or to the hub — a recipient should never discover the pitch multiverse. Only `vision.html` and `hub.html` link onward.
+Client decks still do not cross-link to each other (a recipient lands on their deck, not the multiverse) — but the `/vision/` index now exists at the clean URL by Paul's choice, so discovery via URL-trim is accepted. Only `partnership.html` and `index.html` link onward.
 
 ## Design system (2026-06 rebuild)
 
